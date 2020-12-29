@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pizza Matik</title>
+        <meta name="description" content="Give your pizza order with ease ">
+        <meta name="keywords" content="pizza,order,online,kebap,polow">
+    </head>
+ <body>
+    <header>
+     <h1>Login</h1>
+      <p>Please Login to continue</p>
+    </header>
+     <main>  
+      <form action="./order.html" method="POST" >
+        <!-- Form action hangi metodla gonderejeginizi gosterir 
+        gnelde POST/GET kullanilir -->
+       <section>
+        <label for="username">Username</label>
+        <input id="username" type="text" placeholder="min 3- max 15 characters w/o special " minlength="3" maxlength="12" pattern="[a-zA-z0-9" title="Use letters and numbers between 3-12 characters" required/>
+              <!-- placeholder genelde icine yazgy cikarmak icin kullanir -->
+              <!-- Eger  type email girerseniz arkasindan bir yazmaniza gerek yok -->
+       </section>
+        <!--  Input ID isimleri sadece bir kere kullanilir ve aksesebiliti dedigimiz for un icine yazilir -->
+        <br/><br/>
+       <section>
+        <label for="password">Password</label>
+        <input id="password" type="password"  minlength="6" maxlength="16" required/> 
+        <!-- required yerine title de kullanabilir orn totle="yazmasi gereken metni yazmak lazim" -->
+       </section>  
+        <br/>
+       <section>
+        <!-- <input type="submit" value="Login"> -->
+        <button type="submit">Login</button>
+        <!-- Ikiside kullanilir ikiside ayni buttoni aciyor -->
+
+       </section>
+       <br/>
+      </section> 
+       <label for="collection time">When will you pic up</label>
+       <input id="collection time"  type="number" name="collection time" min="15" max="30" step="5" > 
+      
+     <section>
+
+      </form>
+    </main> 
+       <hr>
+    <footer>
+        &copy;2020 Pizza Matik
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzamatik - Order You Pizza</title>
+</head>
+<body>
+     <header>
+        <h1>Order Your Pizza</h1>
+     </header>
+     <main>
+        <form action="./order.html" method="POST" > 
+        <section>
+        <label for="pizza_name" >Name Your Pizza</label>
+        <input  id="pizza_name" type="text" name="pizza_name">
+     </section>
+      <br/>
+     <section>
+        <label for="pizza_base">Select your base</label> 
+     <br/>
+      <select  id="pizza_base" name="pizza_base" >pizza_base
+        <option value="standard">Standard</option>
+        <option value="thin">Thin Crust</option>
+        <option value="stuffed">Stuffed</option>
+      </select>
+      <!-- select de input kullanilmiyor ve musteriye icinden birini secmeye imkan sagliyor -->
+
+     </section>
+     <section>
+        <label for="pizza_base">Selected Base Souce</label>
+        <br>
+        <input id="pizza_base souce" type="text" list="pizza_souce_list" name="pizza_base souce " >
+        <datalist id="pizza_souce_list" >
+          <option value="Tomato Souce">Standard</option>
+          <option value="BBQ Souce">Thin Crust</option>
+          <option value="Hot BBQ Souce">Stuffed</option>
+        </datalist>
+        <!-- dtalistin Id sini input daki liste yazmak lazim -->
+
+    </section>
+    <br/>
+    <section>
+      <label for="pizza_size">Select pizza_size</label> 
+      <br/>
+      <span>Small</span> 
+        <input type="range" min="1" max="4" step="1">
+        <span>Extra Large</span>
+
+     </section>
+       <br/>
+     <section>
+        <label for="">Select Topping</label>
+        <input id="mushroom" type="checkbox" value="mushroom" name="pizza_toppings">
+        <label for="mushroom">Mushroom</label>
+        <br>
+        <input id="olive" type="checkbox" value="olive" name="pizza_toppings">
+        <label for="olive">Olive</label>
+        <br>
+        <input id="peppers" type="checkbox" value="peppers" name="pizza_toppings">
+        <label for="peppers">Peppers</label>
+        <br>
+        <input id="onion" type="checkbox" value="onion" name="pizza_toppings">
+        <label for="onion">Onion</label>
+        <!-- Checkbox lar birden fazla secenek sectirmek icin kullanilir -->
+     </section>
+        <br/>
+     <section>
+        <label for="">Would you like extra cheese</label><br>
+        <input id="extra_cheese" type="radio" name="extra_cheese" value="yes" checked>
+        <label for="extra_cheese">Yes</label>
+        <input id="no_extra_cheese" type="radio" name="extra_cheese" value="no">
+        <label for="no_extra_cheese">No</label>
+         <!-- radio butonlar sadece birini secmeye imkan veriyor -->
+     </section>
+         <!--  Butun inputlarda olmasi gereken ozellikler <input type="text" name="" id="" value=""> -->
+     
+  </form>
+ </main>
+</body>
+<footer>
+    &copy;2020 Pizza Matik
+</footer>
+</html>
